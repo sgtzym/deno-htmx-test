@@ -16,7 +16,7 @@
 	"imports": {
 		"@db/sqlite": "jsr:@db/sqlite@^0.13.0",
 		"@hono/hono": "jsr:@hono/hono@^4.12.5",
-		"@sgtzym/sparq": "jsr:@sgtzym/sparq@^0.9.13",
+		"@sgtzym/sparq": "jsr:@sgtzym/sparq@^0.9.17",
 		"@tailwindcss/typography": "npm:@tailwindcss/typography@^0.5.19",
 		"alpinejs": "npm:alpinejs@^3.15.8",
 		"daisyui": "npm:daisyui@^5.5.19",

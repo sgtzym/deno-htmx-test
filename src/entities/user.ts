@@ -1,4 +1,4 @@
-import { column, Rec, sparq } from '@sgtzym/sparq'
+import { column, type Infer, sparq } from '@sgtzym/sparq'
 
 import { auditColumns } from '~lib/column.ts'
 import createRepo from '~lib/create_repo.ts'
@@ -14,7 +14,7 @@ export const model = sparq('user', {
 	alias: column.text(),
 })
 
-export type User = Rec<typeof model>
+export type User = Infer<typeof model>
 
 // ----------------------------------------------------------------------------
 // Repo

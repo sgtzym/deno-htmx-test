@@ -4,7 +4,7 @@
     "jsr:@db/sqlite@0.13": "0.13.0",
     "jsr:@denosaurs/plug@1": "1.1.0",
     "jsr:@hono/hono@^4.12.5": "4.12.5",
-    "jsr:@sgtzym/sparq@~0.9.13": "0.9.13",
+    "jsr:@sgtzym/sparq@~0.9.17": "0.9.17",
     "jsr:@std/bytes@^1.0.6": "1.0.6",
     "jsr:@std/crypto@^1.0.5": "1.0.5",
     "jsr:@std/dotenv@~0.225.6": "0.225.6",
@@ -44,8 +44,8 @@
     "@hono/hono@4.12.5": {
       "integrity": "16e6ac6d6ab65c3d08fa4c019c3d9236389044074f3932bf0922fcb582e530c6"
     },
-    "@sgtzym/sparq@0.9.13": {
-      "integrity": "1d19e4a22ee61c326f77fb36f96b5fcd9fa4f6b1e3370d2f353a1212d0df3577"
+    "@sgtzym/sparq@0.9.17": {
+      "integrity": "3c14dd911ee4630e00f44d5eafd796ffa0b9d1825e67618019c0e5d89ad51c48"
     },
     "@std/bytes@1.0.6": {
       "integrity": "f6ac6adbd8ccd99314045f5703e23af0a68d7f7e58364b47d2c7f408aeb5820a"
@@ -482,7 +482,7 @@
     "dependencies": [
       "jsr:@db/sqlite@0.13",
       "jsr:@hono/hono@^4.12.5",
-      "jsr:@sgtzym/sparq@~0.9.13",
+      "jsr:@sgtzym/sparq@~0.9.17",
       "jsr:@std/crypto@^1.0.5",
       "jsr:@std/dotenv@~0.225.6",
       "jsr:@std/fs@^1.0.23",

@@ -68,7 +68,7 @@ export const web = new Hono()
 
 		if (!name || !email || !password) throw new HTTPException(400)
 
-		await create({ name, email, password, alias: alias ?? '' })
+		await create({ name, email, password, alias })
 
 		return c.html(<UserList users={list(c)} />)
 	})
