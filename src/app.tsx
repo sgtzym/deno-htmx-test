@@ -6,6 +6,7 @@ import { handleError, handleNotFound } from '~core/middleware/error.ts'
 import { log } from '~core/middleware/log.ts'
 import { app as userApi } from '~entities/user/api.ts'
 import { requireAuth, requireSession } from '~modules/signin/auth.ts'
+import { app as registerUi } from '~modules/register/ui.tsx'
 import { app as signinUi } from '~modules/signin/ui.tsx'
 import { render } from '~shared/lib/render.tsx'
 
@@ -16,6 +17,7 @@ export const api = new Hono()
 
 export const ui = new Hono()
 	.route('/', signinUi)
+	.route('/register', registerUi)
 	.use(requireSession)
 	.get('/', (c) => render(c, { page: () => <div>test</div> }))
 

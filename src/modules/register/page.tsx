@@ -1,15 +1,15 @@
 import { Shell } from '~shared/layout/shell.tsx'
 
-interface SigninPageProps {
+interface RegisterPageProps {
 	error?: string
 }
 
-export const SigninPage = ({ error }: SigninPageProps) => (
-	<Shell title='Sign in'>
+export const RegisterPage = ({ error }: RegisterPageProps) => (
+	<Shell title='Register'>
 		<main class='min-h-screen flex items-center justify-center p-6'>
 			<div class='card w-full max-w-sm shadow-xl bg-base-100'>
 				<div class='card-body gap-4'>
-					<h1 class='card-title text-2xl'>Welcome</h1>
+					<h1 class='card-title text-2xl'>Register Account</h1>
 
 					{error && (
 						<div role='alert' class='alert alert-error'>
@@ -17,7 +17,7 @@ export const SigninPage = ({ error }: SigninPageProps) => (
 						</div>
 					)}
 
-					<form method='post' action='/signin' class='flex flex-col gap-4'>
+					<form method='post' action='/register' class='flex flex-col gap-4'>
 						<label class='form-control'>
 							<div class='label'>
 								<span class='label-text'>Email</span>
@@ -37,12 +37,8 @@ export const SigninPage = ({ error }: SigninPageProps) => (
 							<input type='password' name='password' class='input w-full' required />
 						</label>
 
-						<button type='submit' class='btn btn-primary'>Sign in</button>
+						<button type='submit' class='btn btn-primary'>Register</button>
 					</form>
-
-					<div>
-						Need an account? <a href='/register'>Register now</a>.
-					</div>
 				</div>
 			</div>
 		</main>

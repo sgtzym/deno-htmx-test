@@ -1,6 +1,6 @@
-import { type User } from './user.ts'
+import { type User } from './model.ts'
 
-import { UserList } from '~entities/user/list.tsx'
+import { UserList } from './list.tsx'
 
 interface UserListPageProps {
 	users: Omit<User, 'password'>[]
@@ -49,16 +49,7 @@ export function UserListPage({ users }: UserListPageProps) {
 								required
 								class='input w-full' />
 						</fieldset>
-						<fieldset class='fieldset'>
-							<legend class='fieldset-legend'>Alias</legend>
-							<input
-								type='text'
-								name='alias'
-								placeholder='Alias'
-								class='input w-full' />
-							<p class='label'>Optional</p>
-						</fieldset>
-						<button type='submit' class='btn btn-primary'>Add User</button>
+						<button type='submit' class='btn btn-primary'>Register</button>
 					</form>
 				</section>
 

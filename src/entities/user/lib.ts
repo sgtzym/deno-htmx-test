@@ -16,9 +16,8 @@ export const create = async (data: Insertable<User>) => {
 	const existing = repo.findOne({ email: data.email })
 	if (existing) throw new ConflictError('Email already in use.')
 
-	const password = await hashPassword(data.password)
-	const created = repo.create({ ...data, password })
-
+	const hashed = await hashPassword(data.password)
+	const created = repo.create({ ...data, password: hashed })
 	if (!created) throw new InternalError('Unable to create new user.')
 
 	return serialize(created)

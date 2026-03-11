@@ -1,4 +1,4 @@
-import { type User } from './user.ts'
+import { type User } from './model.ts'
 
 interface UserListProps {
 	users: Omit<User, 'password'>[]
