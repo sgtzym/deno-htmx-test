@@ -37,7 +37,7 @@ src/
 **Routing split:** API routes (`/api/v1/*`) return JSON for external clients. Web routes (`/*`)
 return HTML for browsers.
 
-**HTMX rendering:** The `render()` helper in `src/web/shared/render.tsx` handles three cases
+**HTMX rendering:** The `render()` helper in `~shared/lib/render.tsx` handles three cases
 automatically:
 
 - Direct browser request → full page with layout
