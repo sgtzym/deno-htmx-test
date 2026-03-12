@@ -74,4 +74,4 @@ Create `.env` and adjust as needed.
 2. Add the model to `src/core/db.ts` (`db.init([...])`).
 3. Create `~entities/my_entity/api.ts` and/or `~entities/my_entity/ui.ts`.
 4. Register the routes in `~core/app.ts`.
-5. Add pages and JSX components as needed in `src/web/my_entity/`.
+5. Add pages and JSX components as needed in `~entities/my_entity/` or `~modules/my_module/`.
