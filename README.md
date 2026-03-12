@@ -21,14 +21,17 @@ Alpine.
 The server renders HTML directly. HTMX updates the page by swapping HTML fragments returned from the
 server — no client-side routing, no JavaScript framework.
 
+This project follows a vertical slice architecture. Each feature (entity) owns its complete stack — model, repository, API handler, and UI — in a single directory under entities/. This keeps related code together and avoids the cognitive overhead of navigating across multiple top-level layers (controllers/, models/, views/) for a single change. Cross-cutting concerns like layout, shared components, and middleware live in core/ and shared/.
+
 ```
 src/
-├── app/          # Server setup, config, middleware
-├── entities/     # Data models and repositories (one file per entity)
-├── lib/          # Shared utilities and factories
-├── routes/       # HTTP handlers — api/ for JSON, web/ for HTML
-├── styles/       # Tailwind entry point
-└── web/          # JSX components and page templates
+├── core/             # Server config, middleware, DB connection
+├── entities/         # Feature modules (model, repo, api, lib, ui, pages)
+├── modules/          # Auth and other non-entity modules (signin, register)
+├── shared/           # Cross-cutting components, layout, utilities
+├── styles/           # Tailwind entry point
+├── app.tsx           # Hono app instance and route registration
+└── main.ts           # Entry point
 ```
 
 **Routing split:** API routes (`/api/v1/*`) return JSON for external clients. Web routes (`/*`)
