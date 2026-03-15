@@ -16,24 +16,6 @@ Exploring server-rendered web apps with [Deno](https://deno.com) 🦕 – evalua
 | Reactivity    | [Alpine](https://alpinejs.dev)                                                          | Lightweight client-side state                   |
 | Styles        | [Tailwind CSS v4](https://tailwindcss.com) + [DaisyUI v5](https://daisyui.com)          | Utility-first CSS with component classes        |
 
-# Deno HTMX Test
-
-Building server-rendered web apps with [Deno](https://deno.com) 🦕 – using SQLite, Hono, HTMX, and
-Alpine.
-
-**Note:** This is a playground repo for testing the stack and educational purposes only - use at own risk.
-
-## Stack
-
-| Layer         | Technology                                                                              | Purpose                                         |
-| ------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| Runtime       | [Deno v2](https://deno.com)                                                             | TypeScript runtime, built-in tooling            |
-| Server        | [Hono](https://hono.dev)                                                                | HTTP routing, middleware, JSX rendering         |
-| Database      | [@db/sqlite](https://jsr.io/@db/sqlite) + [@sgtzym/sparq](https://jsr.io/@sgtzym/sparq) | SQLite client with type-safe query builder      |
-| Interactivity | [HTMX](https://htmx.org)                                                                | Partial HTML swaps without a frontend framework |
-| Reactivity    | [Alpine](https://alpinejs.dev)                                                          | Lightweight client-side state                   |
-| Styles        | [Tailwind CSS v4](https://tailwindcss.com) + [DaisyUI v5](https://daisyui.com)          | Utility-first CSS with component classes        |
-
 ## Architecture
 
 The server renders HTML directly. HTMX updates the page by swapping HTML fragments returned from the
