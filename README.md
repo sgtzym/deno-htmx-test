@@ -1,3 +1,21 @@
+# Deno HTMX Playground
+
+Exploring server-rendered web apps with [Deno](https://deno.com) 🦕 – evaluating the combination of SQLite, Hono, HTMX, and Alpine.
+
+> ⚠️ This is an educational project, not a template. Code reflects experimentation and may change
+> without notice. Use at your own risk.
+
+## Stack
+
+| Layer         | Technology                                                                              | Purpose                                         |
+| ------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Runtime       | [Deno v2](https://deno.com)                                                             | TypeScript runtime, built-in tooling            |
+| Server        | [Hono](https://hono.dev)                                                                | HTTP routing, middleware, JSX rendering         |
+| Database      | [@db/sqlite](https://jsr.io/@db/sqlite) + [@sgtzym/sparq](https://jsr.io/@sgtzym/sparq) | SQLite client with type-safe query builder      |
+| Interactivity | [HTMX](https://htmx.org)                                                                | Partial HTML swaps without a frontend framework |
+| Reactivity    | [Alpine](https://alpinejs.dev)                                                          | Lightweight client-side state                   |
+| Styles        | [Tailwind CSS v4](https://tailwindcss.com) + [DaisyUI v5](https://daisyui.com)          | Utility-first CSS with component classes        |
+
 # Deno HTMX Test
 
 Building server-rendered web apps with [Deno](https://deno.com) 🦕 – using SQLite, Hono, HTMX, and
